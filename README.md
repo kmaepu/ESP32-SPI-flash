@@ -1,7 +1,7 @@
 # ESP-WROOOM-32 SPI flash access
 
 ## Overview
-　このソースコードは、ESP-WROOM-32の外部SPIフラッシュメモリ（4MB)にデータのRead/Writeするコードです。
+　このソースコードはESP-WROOM-32の外部SPIフラッシュメモリ（4MB)に、インクリメントデータ1byteをRead/Writeするコードです。
 外部SPIフラッシュメモリは不揮発性なので、電源を落としてもデータが残ります。様々な処理に使用するパラメータを起動時にロードする事などに使えます。
 ## Dependency
 　開発環境：Arduino-IDE  
@@ -13,17 +13,19 @@
 ## Setup
 　Arduino-IDEでESP-WROOM-32のコードを開発する環境が必要です。  
  
-# Usage
-　１．スケッチファイル（.ino）を入手。
-　２．スケッチファイルを開いてコンパイル
-　３．
+## Usage
+　１．スケッチファイル（.ino）を入手  
+　２．スケッチファイルを開いてコンパイル  
+　３．ボードに書き込み  
+  ４．シリアルモニタを表示  
+　　　１秒間隔でデータ１byteをRead/Writeします。書き込むデータは読み込んだデータに1を足した値です。 　　
 
-# Licence
+## Licence
 This software is released under the MIT License, see LICENSE.
 
-# Authors
-　kmaepu
-
-# References
+## Authors
+ kmaepu 
+ 
+## References
 　ESPRESSIF ESP-IDE Programing Guide SPI Flash APIs  
  https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/storage/spi_flash.html
