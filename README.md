@@ -11,8 +11,8 @@
   ※１：Arduino-IDEでESP-WROOM-32の開発環境が整っていればデフォルトで用意されています
 
 ## Setup
-　Arduino-IDEでESP-WROOM-32のコードを開発する環境が必要です。  
- 
+ - Arduino-IDEでESP-WROOM-32のコードを開発する環境が必要です。  
+ - パーテションテーブルはデフォルト（default.csv）を使用してください。 
 ## Usage
 　1.スケッチファイル（.ino）を入手  
 　2.スケッチファイルを開いてコンパイル  
