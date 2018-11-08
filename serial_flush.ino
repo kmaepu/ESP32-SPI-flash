@@ -1,7 +1,7 @@
 
 #include "esp_spi_flash.h"
 
-#define SPIFFS_BASE_ADDR 0x291000 // SPI flashのベースアドレス
+#define SPIFFS_BASE_ADDR 0x291000 // SPIFFS領域のベースアドレス
 
 uint32_t chip_size = 0;
 uint8_t w_buf[SPI_FLASH_SEC_SIZE];
