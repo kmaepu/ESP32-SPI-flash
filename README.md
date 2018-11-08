@@ -21,7 +21,7 @@
 　　　１秒間隔でデータ１byteをRead/Writeします。書き込むデータは読み込んだデータに1を足した値です。 　　
 
 ## Licence
-This software is released under the MIT License, see LICENSE.
+ ライセンスフリーです。
 
 ## Authors
  kmaepu 
