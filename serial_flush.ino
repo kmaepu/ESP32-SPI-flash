@@ -12,9 +12,7 @@ void setup() {
   w_buf[0] = 0x00;
 }
 
-void loop() {
-  delay(1000);
-  
+void loop() {  
   // SPI flashから読み込み
   spi_flash_read(SPIFFS_BASE_ADDR,r_buf,SPI_FLASH_SEC_SIZE);
   Serial.printf("Read SPI flash data = %x\n",r_buf[0]);
@@ -27,4 +25,6 @@ void loop() {
   // SPI flashへ書き込み
   Serial.printf("Write to SPI flash = %x\n\n",w_buf[0]);
   spi_flash_write(SPIFFS_BASE_ADDR,w_buf,1);
+  
+  delay(1000);  
 }
